@@ -15,4 +15,4 @@ for i, bgImage in enumerate(bgImage_list):
     for j, fgImage in enumerate(fgImage_list):
         finalImg = overlayImage(str(bgImage), str(fgImage))
         label = os.path.split(bgImage)[1] + os.path.split(fgImage)[1]
-        cv2.imwrite('Media/processed_images/'+label, finalImg)
+        cv2.imwrite('Media/results/'+label, finalImg)
